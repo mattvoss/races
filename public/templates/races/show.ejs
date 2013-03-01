@@ -1,0 +1,25 @@
+<table>
+	
+		<tr>
+			<td>name:</td>
+			<td><% if (typeof(name) !== "undefined") { %><%= name %><% } %></td>
+		</tr>
+	
+		<tr>
+			<td>id:</td>
+			<td><% if (typeof(id) !== "undefined") { %><%= id %><% } %></td>
+		</tr>
+	
+		<tr>
+			<td>statefp10:</td>
+			<td><% if (typeof(statefp10) !== "undefined") { %><%= statefp10 %><% } %></td>
+		</tr>
+	
+		<tr>
+			<td>geoid:</td>
+			<td><% if (typeof(geoid) !== "undefined") { %><%= geoid %><% } %></td>
+		</tr>
+	
+</table>
+<a href="/races" class="btn">All racess</a>
+<a href="/races/edit/<%= _id %>" class="btn btn-primary">Edit <%= _id %></a>

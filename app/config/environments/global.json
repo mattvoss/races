@@ -1,0 +1,25 @@
+{
+    "port": 1117,
+    "secret": "voss2474",
+    "enableJSON": true,
+    "public": "./public",
+    "templates": "./public/templates",
+    "layout": "layout",
+    "viewEngine": "hbs",
+    "require": {
+        "baseUrl": "./public/scripts/",
+        "paths": {
+            "models": "models",
+            "views": "views",
+            "collections": "collections",
+            "controllers": "../../controllers",
+            "templates": "../templates",
+            "css": "../css"
+        }
+    },
+    "storage": {
+        "driver": "mongoose",
+        "server": "10.0.3.1",
+        "database": "races"
+    }
+}

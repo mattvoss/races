@@ -1,0 +1,32 @@
+
+	<div class="control-group <% if (typeof errors.name === "object") { %>error<% } %>">
+		<label class="control-label" for="name">name</label>
+		<input name="name" type="text" value="<% if (typeof(name) !== "undefined") { %><%= name %><% } %>" />
+		<% if (typeof errors.name === "object") { %>
+			<div class="message-small red"><%= errors.name.message %></div>
+		<% } %>
+	</div>
+
+	<div class="control-group <% if (typeof errors.id === "object") { %>error<% } %>">
+		<label class="control-label" for="id">id</label>
+		<input name="id" type="text" value="<% if (typeof(id) !== "undefined") { %><%= id %><% } %>" />
+		<% if (typeof errors.id === "object") { %>
+			<div class="message-small red"><%= errors.id.message %></div>
+		<% } %>
+	</div>
+
+	<div class="control-group <% if (typeof errors.statefp10 === "object") { %>error<% } %>">
+		<label class="control-label" for="statefp10">statefp10</label>
+		<input name="statefp10" type="text" value="<% if (typeof(statefp10) !== "undefined") { %><%= statefp10 %><% } %>" />
+		<% if (typeof errors.statefp10 === "object") { %>
+			<div class="message-small red"><%= errors.statefp10.message %></div>
+		<% } %>
+	</div>
+
+	<div class="control-group <% if (typeof errors.geoid === "object") { %>error<% } %>">
+		<label class="control-label" for="geoid">geoid</label>
+		<input name="geoid" type="text" value="<% if (typeof(geoid) !== "undefined") { %><%= geoid %><% } %>" />
+		<% if (typeof errors.geoid === "object") { %>
+			<div class="message-small red"><%= errors.geoid.message %></div>
+		<% } %>
+	</div>

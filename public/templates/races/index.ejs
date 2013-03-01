@@ -1,0 +1,8 @@
+<table class="table table-striped">
+<% _.each(racess, function (races) { %>
+	<tr>
+		<td><a href="/races/<%= races._id %>"><%= races._id %><a></td>
+	</tr>
+<% }) %>
+</table>
+<a href="/races/new" class="btn">New races</a>
